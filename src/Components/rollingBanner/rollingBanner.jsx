@@ -4,7 +4,7 @@ import { bannerData } from "../../json/demo_data";
 import { Up, Down } from "../../Svg/Button";
 
 const RollingBanner = () => {
-    const transitionDefault = `all 0.5s ease-in-out`;
+    const transitionDefault = `all 1s ease-in-out`;
     const pannelHeight = 40;
     const [bannerList, setBannerList] = useState(bannerData);
     const virtualArray = bannerList.slice(0,1); // 0번 배열을 본배열 뒤에 하나 붙여주기위한 변수
@@ -15,7 +15,7 @@ const RollingBanner = () => {
     const [transitionValue, setTransitionValue] = useState(transitionDefault);
 
     useEffect(() => {
-        const repeat = setTimeout(() => Slider(),1000);
+        const repeat = setTimeout(() => Slider(),1500);
         if (transitionValue === "none") setTransitionValue(transitionDefault);
         return () => clearTimeout(repeat);
       }, [Y]) // eslint-disable-line

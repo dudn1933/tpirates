@@ -19,18 +19,17 @@ const MenuBar = styled.ul`
     height:40px;
     list-style:none;
     margin:auto;
-    padding:0;
+    padding:0 28px;
     justify-content:space-between;
     align-items:center;
 `;
 const List = styled.li`
     cursor: pointer;
     color: #777;
-    font-size:14px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: -.7px;
     font-weight: 500;
-    
     &:hover {
         color:#1c79bc;
     }

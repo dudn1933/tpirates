@@ -19,6 +19,7 @@ export default Header;
 const HeaderTop = styled.div`
     display:flex;
     justify-content:space-between;
+    padding:0 15px;
 `;
 
 const MainLogo = styled.div`

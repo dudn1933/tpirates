@@ -8,6 +8,13 @@ const SelectFilter = () => {
     const [data, setData] = useState(9);
     const optionList = ["모든 지역", "모든 품목", "기본 순"];
     const basic = ["기본 순", "인기 순", "최근 본 가게"];
+    const area = [{
+        label: "내 주변",
+        code: "CurrentLocation",
+      },{
+        label: "모든 지역",
+        code: "AllRegions",
+      },];
 
     const openList = (e) => {
         if(on === false) {
@@ -24,7 +31,7 @@ const SelectFilter = () => {
     const listData = () => {
         console.log(itemData)
         if(data === "0") {
-            return zoneData.map(({code,label}) => {
+            return area.concat(zoneData).map(({code,label}) => {
                 return <ZoneData key={code}>{label}</ZoneData>
             })
         } else if(data === "1") {

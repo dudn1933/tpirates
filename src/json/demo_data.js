@@ -280,9 +280,15 @@ export const zoneData = [
 ];
 
 // 모든 품목
-var itemData = [
-  { label: "모든품목", code: "0000000000" },
-  { label: "생선/횟감", code: "0000000038" },
+export const itemData = [
+  {
+    label: "모든품목",
+    code: "0000000000",
+  },
+  {
+    label: "생선/횟감",
+    code: "0000000038",
+  },
   { label: "생선/비횟감", code: "0000000040" },
   { label: "게, 새우류", code: "0000000039" },
   { label: "조개, 전복류", code: "0000000041" },
@@ -297,7 +303,7 @@ var itemData = [
 ];
 
 // 가게 목록
-var storeData = [
+export const storeData = [
   {
     description: "대게, 킹크랩, 꽃게 전문 노량진수산시장 부안꽃게",
     uri: "/노량진수산시장부안꽃게",
