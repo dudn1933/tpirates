@@ -1,6 +1,6 @@
 ## Download Package
 
-설치 패키지
+설치 패키지 npm install or yarn install
 
 1. styled-components
 2. react-router-dom
