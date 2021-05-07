@@ -1,14 +1,26 @@
+import { useState, createContext } from "react";
+import { Route, Switch } from "react-router-dom";
 import styled from "styled-components";
-import Header from "./Components/header/header";
-import RollingBanner from "./Components/rollingBanner/rollingBanner";
-import SelectFilter from "./Components/selectFilter/selectFilter";
+import StoreDetailPage from "./Components/main/storeDetail/storeDetailPage";
+import MainPage from "./page/mainpage";
+
+export const PostsContext = createContext();
 
 const App = () => {
+  const [on, setOn] = useState(false);
+  const [detail, setDetail] = useState(false);
+  const [storeData, setStoreData] = useState([]);
+
   return (
     <Tpirates>
-      <Header />
-      <RollingBanner />
-      <SelectFilter />
+      <PostsContext.Provider
+        value={{ on, setOn, detail, setDetail, storeData, setStoreData }}
+      >
+        <Switch>
+          <Route path="/" component={MainPage} exact />
+          <Route path="/:label" component={StoreDetailPage} exact />
+        </Switch>
+      </PostsContext.Provider>
     </Tpirates>
   );
 };

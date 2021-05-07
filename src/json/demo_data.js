@@ -339,7 +339,7 @@ export const storeData = [
     id: "0000000863",
     label: "5문앞 첫집(항도유통)",
     thumbnail:
-      "https://cdn.tpirates.com/files/etc/2019/0322/2558dfc8ad72977f467bd2fb9d285767_FThumb.jpg",
+      "https://cdn.tpirates.com/files/etc/2018/1120/d1b7db8929898057178dc5d914b9f09b_FThumb.jpg",
     summary: { comments: 449, rating: 4.7 },
     market: "구리농수산물시장",
     favorite: "off",
@@ -470,7 +470,7 @@ export const storeData = [
     id: "0000000291",
     label: "진산수산",
     thumbnail:
-      "https://cdn.tpirates.com/files/etc/2020/0330/204d06fe47bf86d086be3639e889e273_FThumb.jpg",
+      "https://cdn.tpirates.com/files/etc/2018/1120/d1b7db8929898057178dc5d914b9f09b_FThumb.jpg",
     summary: { comments: 380, rating: 4.6 },
     market: "하남수산물복합단지",
     favorite: "off",
@@ -680,7 +680,7 @@ export const storeData = [
     id: "0000001025",
     label: "해심수산",
     thumbnail:
-      "https://cdn.tpirates.com/files/etc/2019/1021/398065002a60049c21623e14b1a36c0c_FThumb.jpg",
+      "https://cdn.tpirates.com/files/etc/2018/1120/d1b7db8929898057178dc5d914b9f09b_FThumb.jpg",
     summary: { comments: 352, rating: 4.9 },
     market: "소래포구종합어시장",
     favorite: "off",
@@ -851,7 +851,7 @@ export const storeData = [
     id: "0000000710",
     label: "대원",
     thumbnail:
-      "https://cdn.tpirates.com/files/etc/2019/0322/3cbff364c6a5138fcf3dc8f2b3bb5786_FThumb.jpg",
+      "https://cdn.tpirates.com/files/etc/2018/1120/d1b7db8929898057178dc5d914b9f09b_FThumb.jpg",
     summary: { comments: 753, rating: 4.7 },
     market: "노량진수산시장",
     favorite: "off",
@@ -903,7 +903,7 @@ export const storeData = [
     id: "0000000055",
     label: "명선네",
     thumbnail:
-      "https://cdn.tpirates.com/files/etc/2018/1119/4244dc01cc06f76ddfdf981938b5bd7d_FThumb.jpg",
+      "https://cdn.tpirates.com/files/etc/2018/1120/d1b7db8929898057178dc5d914b9f09b_FThumb.jpg",
     summary: { comments: 481, rating: 4.5 },
     market: "인천종합(연안부두)어시장",
     favorite: "off",
