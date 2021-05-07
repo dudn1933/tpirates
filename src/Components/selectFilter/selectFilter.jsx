@@ -145,7 +145,7 @@ const Option = styled.div`
     cursor:pointer;
     text-align:center;
     background-color:${({data, id, on}) => !on ? '#eee' : `${data}` === `${id}` ? 'white' : '#eee'};
-    color:${({data, id, on}) => !on ? 'black' : `${data}` === `${id}` ? '#1b79bc' : 'black'};
+    color:#1b79bc;
     font-weight:${({data, id, on}) => !on ? 'normal' : `${data}` === `${id}` ? 'bold' : 'normal'};
     box-sizing:border-box;
     padding: 9px 0;

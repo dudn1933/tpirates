@@ -6,15 +6,16 @@ import { Link } from "react-router-dom";
 
 const StoreList = ( {description,label,market,state,summary,tags,thumbnail}) => {
     const { setDetail, setStoreData } = useContext(PostsContext);
-
+    
     const setDetailChange = () => {
         setDetail(true);
         setStoreData([label,market,tags,thumbnail]);
     }
 
+    //  데이터를 fetch 받아서 한것이 아니고 상태관리로 하다보니 상세페이지에서 새로고침시 데이터 유실..
     return (
         <ImageLink to={`/${label}`}>
-            <Store onClick={setDetailChange}>
+            { tags && (<Store onClick={setDetailChange}>
                 <StoreImage thumbnail={thumbnail} />
                 <StoreInformation>
                     <StoreLabel>{label}</StoreLabel>
@@ -39,6 +40,7 @@ const StoreList = ( {description,label,market,state,summary,tags,thumbnail}) => 
                     </StoreSituation>
                 </StoreInformation>
             </Store>
+            )}
         </ImageLink>
     )
 }

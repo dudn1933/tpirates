@@ -24,6 +24,7 @@ const DetailHeader = () => {
                     <Number>{'20.6만'}</Number>
                 </View>
             </Header>
+            {tags && 
             <StoreImage>
                 <Image thumbnail={thumbnail}></Image>
                 {tags.length === 1 ?
@@ -36,6 +37,7 @@ const DetailHeader = () => {
                     </div>
                 }
             </StoreImage>
+            }
         </DetailPage>
     )
 }

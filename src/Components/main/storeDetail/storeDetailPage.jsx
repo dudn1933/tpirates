@@ -9,13 +9,13 @@ const StoreDetailPage = () => {
     const {detail, storeData} = useContext(PostsContext);
     return (
         <>
-            {detail && storeData && 
+            {/* {detail && storeData &&  */}
             <Header>
                 <DetailHeader />
                 <StoreInfo />
                 <InfoTab />
             </Header>
-            }
+            
         </>
     )
 }
